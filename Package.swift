@@ -9,10 +9,10 @@ let package = Package(
         .macOS(.v10_11)
     ],
     products: [
-        .executable(name: "sitrep", targets: ["Sitrep"])
+        .executable(name: "Sitrep", targets: ["Sitrep"])
     ],
     dependencies: [
-        .package(url: "https://github.com/apple/swift-syntax.git", .exact("0.50100.0"))
+        .package(url: "https://github.com/apple/swift-syntax.git", .revision("swift-5.2-DEVELOPMENT-SNAPSHOT-2020-03-02-a"))
     ],
     targets: [
         .target(name: "Sitrep", dependencies: ["SitrepCore"]),
